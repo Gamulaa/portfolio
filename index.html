@@ -4,237 +4,519 @@
     <meta charset="UTF-8" />
     <title>Gemechu Fekadu | Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Lab 8: Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Gemechu Fekadu, Software Engineering student and aspiring web developer in Addis Ababa."
+    />
+    <meta
+      name="keywords"
+      content="Gemechu Fekadu, portfolio, software engineering, web developer, HTML"
+    />
+    <meta name="author" content="Gemechu Fekadu" />
   </head>
   <body>
-    <h1>Gemechu Fekadu</h1>
-    <img
-      src="images/profile.jpg"
-      alt="Portrait of Your Name smiling"
-      title="Your Name"
-      width="200"
-      height="200"
-    />
-    <p>Software Engineering student and aspiring web developer.</p>
+    <!-- Lab 8: Header -->
+    <header>
+      <!-- Lab 14: Canvas Logo -->
+      <canvas id="logo" width="120" height="120">GF Logo</canvas>
 
-    <p>
-      <a href="#about">About</a> | <a href="#skills">Skills</a> |
-      <a href="#projects">Projects</a> | <a href="#education">Education</a> |
-      <a href="#contact">Contact</a> |
-      <a href="projects.html">All Projects</a>
-    </p>
+      <h1>Gemechu Fekadu</h1>
+      <img
+        src="images/profile.jpg"
+        alt="Portrait of Gemechu Fekadu smiling"
+        title="Gemechu Fekadu"
+        width="200"
+        height="200"
+      />
+      <p>Software Engineering student and aspiring web developer.</p>
 
-    <hr />
-    <h2 id="about">About Me</h2>
-    <p>
-      I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student.
-      I <em>really</em> enjoy building websites, and my current goal is to
-      <mark>become a full-stack web developer</mark>.
-    </p>
-    <p>
-      Languages I have used: <b>Python</b>, <b>C++</b> and
-      <i>a little</i> JavaScript.
-    </p>
-    <p>Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.</p>
+      <!-- Lab 12: Dialog -->
+      <button
+        type="button"
+        onclick="document.getElementById('hireDialog').showModal()"
+      >
+        Hire me
+      </button>
+      <dialog id="hireDialog">
+        <h2>Available for internships</h2>
+        <p>
+          I am available for internships and freelance web projects from June
+          2027.
+        </p>
+        <p>
+          <a href="#contact">Send me a message</a> or
+          <a href="files/CV.pdf" download>download my CV</a>.
+        </p>
+        <button
+          type="button"
+          onclick="document.getElementById('hireDialog').close()"
+        >
+          Close
+        </button>
+      </dialog>
 
-    <hr />
-    <h2>What Inspires Me</h2>
-    <blockquote>
-      "The best way to predict the future is to invent it." — Alan Kay
-    </blockquote>
-    <p>
-      My teacher always says <q>practice beats theory</q>, so I code every day.
-    </p>
-    <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin</p>
+      <!-- Lab 8: Nav -->
+      <nav>
+        <a href="#about">About</a> | <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> | <a href="#education">Education</a> |
+        <a href="#contact">Contact</a> |
+        <a href="projects.html">All Projects</a>
+      </nav>
+    </header>
 
-    <hr />
-    <h2 id="skills">Skills</h2>
-    <ul>
-      <li>
-        Programming Languages
-        <ul type="square">
-          <li>Python</li>
-          <li>C++</li>
-          <li>Java</li>
-        </ul>
-      </li>
-      <li>
-        Web Development
-        <ul type="circle">
-          <li>HTML</li>
-          <li>CSS (learning)</li>
-          <li>JavaScript (next)</li>
-        </ul>
-      </li>
-      <li>
-        Soft Skills
+    <!-- Lab 8: Main -->
+    <main>
+      <!-- Lab 8: Sections & IDs moved from H2 to Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a 3<sup>rd</sup> year
+          <strong>Software Engineering</strong> student. I <em>really</em> enjoy
+          building websites, and my current goal is to
+          <mark>become a full-stack web developer</mark>.
+        </p>
+        <p>
+          Languages I have used: <b>Python</b>, <b>C++</b> and
+          <i>a little</i> JavaScript.
+        </p>
+        <p>
+          Fun fact: I drink 2 litres of H<sub>2</sub>O while coding every day.
+        </p>
+
+        <!-- Lab 13: Entities -->
+        <p>
+          My favourite tag is &lt;main&gt;, because it tells the browser where
+          the important content is &amp; helps screen readers.
+        </p>
+
+        <!-- Lab 11: Audio -->
+        <h3>Hear my introduction</h3>
+        <audio controls>
+          <source src="media/intro.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Lab 8: Aside -->
+      <aside>
+        <h2>What Inspires Me</h2>
+        <blockquote>
+          "The best way to predict the future is to invent it." — Alan Kay
+        </blockquote>
+        <p>
+          My teacher always says <q>practice beats theory</q>, so I code every
+          day.
+        </p>
+        <p>Book I am reading: <cite>Clean Code</cite> by Robert C. Martin</p>
+
+        <!-- Lab 11: Iframe YouTube -->
+        <h3>A talk I recommend</h3>
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+          width="560"
+          height="315"
+          title="YouTube video: Inspiring Tech Talk"
+          allowfullscreen
+        ></iframe>
+      </aside>
+
+      <section id="skills">
+        <h2>Skills</h2>
         <ul>
-          <li>Teamwork</li>
-          <li>Presenting</li>
+          <li>
+            Programming Languages
+            <ul type="square">
+              <li>Python</li>
+              <li>C++</li>
+              <li>Java</li>
+            </ul>
+          </li>
+          <li>
+            Web Development
+            <ul type="circle">
+              <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+              <li>CSS (learning)</li>
+              <li>JavaScript (next)</li>
+            </ul>
+          </li>
+          <li>
+            Soft Skills
+            <ul>
+              <li>Teamwork</li>
+              <li>Presenting</li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
 
-    <h3>My Learning Roadmap</h3>
-    <ol type="1">
-      <li>HTML structure and content</li>
-      <li>CSS layout and design</li>
-      <li>JavaScript and the DOM</li>
-      <li>PHP and databases</li>
-      <li>Deploy my portfolio online</li>
-    </ol>
+        <h3>My Learning Roadmap</h3>
+        <ol type="1">
+          <li>HTML structure and content</li>
+          <li>CSS layout and design</li>
+          <li>JavaScript and the DOM</li>
+          <li>PHP and databases</li>
+          <li>Deploy my portfolio online</li>
+        </ol>
 
-    <h3>Tools I Use</h3>
-    <dl>
-      <dt>VS Code</dt>
-      <dd>The code editor I use for every lab.</dd>
-      <dt>Chrome DevTools</dt>
-      <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
-      <dt>Git and GitHub</dt>
-      <dd>Saves versions of my code and shares my projects online.</dd>
-    </dl>
+        <h3>Tools I Use</h3>
+        <dl>
+          <dt>VS Code</dt>
+          <dd>The code editor I use for every lab.</dd>
+          <dt>Chrome DevTools</dt>
+          <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
+          <dt>Git and GitHub</dt>
+          <dd>Saves versions of my code and shares my projects online.</dd>
+        </dl>
 
-    <hr />
-    <h2 id="projects">Projects</h2>
+        <!-- Lab 12: Meters -->
+        <h3>Skill Levels</h3>
+        <p>
+          <label for="lvl-html">HTML</label>
+          <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+        </p>
+        <p>
+          <label for="lvl-python">Python</label>
+          <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+        </p>
+        <p>
+          <label for="lvl-js">JavaScript</label>
+          <meter
+            id="lvl-js"
+            value="0.2"
+            min="0"
+            max="1"
+            low="0.3"
+            high="0.7"
+            optimum="1"
+          >
+            20%
+          </meter>
+        </p>
+      </section>
 
-    <h3>Simple Calculator</h3>
-    <img
-      src="images/project-calculator.png"
-      alt="Screenshot of the calculator showing 12 + 30 = 42"
-      width="400"
-      height="250"
-    />
-    <p>A calculator that adds, subtracts, multiplies and divides.</p>
+      <section id="projects">
+        <h2>Projects</h2>
 
-    <h3>Library Management System</h3>
-    <img
-      src="images/project-library.png"
-      alt="Screenshot of the library system main menu"
-      width="400"
-      height="250"
-    />
-    <p>A console program for borrowing and returning books.</p>
+        <article>
+          <h3>Simple Calculator</h3>
+          <img
+            src="images/project-calculator.png"
+            alt="Screenshot of the calculator showing 12 + 30 = 42"
+            width="400"
+            height="250"
+          />
+          <p>A calculator that adds, subtracts, multiplies and divides.</p>
+        </article>
 
-    <h3>My First Program</h3>
-    <p>
-      The first thing I wrote in Python was <code>print("Hello, World!")</code>.
-      Later I wrote this loop:
-    </p>
-    <pre><code>for i in range(3):
+        <article>
+          <h3>Library Management System</h3>
+          <img
+            src="images/project-library.png"
+            alt="Screenshot of the library system main menu"
+            width="400"
+            height="250"
+          />
+          <p>A console program for borrowing and returning books.</p>
+        </article>
+
+        <article>
+          <h3>My First Program</h3>
+          <p>
+            The first thing I wrote in Python was
+            <code>print("Hello, World!")</code>. Later I wrote this loop:
+          </p>
+          <pre><code>for i in range(3):
     print("Hello", i)
 </code></pre>
+        </article>
 
-    <p><a href="projects.html">See all my projects →</a></p>
+        <p><a href="projects.html">See all my projects →</a></p>
+      </section>
 
-    <hr />
-    <h2 id="education">Education</h2>
-    <h3>BSc in Software Engineering</h3>
-    <p>Addis Ababa Science and Technology University, 2023 – present</p>
+      <section id="education">
+        <h2>Education</h2>
+        <h3>BSc in Software Engineering</h3>
+        <!-- Lab 13: Time -->
+        <p>
+          Addis Ababa Science and Technology University,
+          <time datetime="2023-09">September 2023</time> – present
+        </p>
 
-    <table border="1" cellpadding="8" cellspacing="0">
-      <caption>
-        Academic Record — BSc in Software Engineering
-      </caption>
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Semester</th>
-          <th>Course</th>
-          <th>Credit Hours</th>
-          <th>Grade</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="4">Year 1</th>
-          <td rowspan="2">Semester I</td>
-          <td>Fundamentals of Programming</td>
-          <td>5</td>
-          <td>A</td>
-        </tr>
-        <tr>
-          <td>Applied Mathematics I</td>
-          <td>4</td>
-          <td>B+</td>
-        </tr>
-        <tr>
-          <td rowspan="2">Semester II</td>
-          <td>Object Oriented Programming</td>
-          <td>5</td>
-          <td>A</td>
-        </tr>
-        <tr>
-          <td>Discrete Mathematics</td>
-          <td>4</td>
-          <td>B</td>
-        </tr>
-        <tr>
-          <th rowspan="2">Year 2</th>
-          <td rowspan="2">Semester I</td>
-          <td>Data Structures &amp; Algorithms</td>
-          <td>5</td>
-          <td>A-</td>
-        </tr>
-        <tr>
-          <td>Internet Programming I</td>
-          <td>5</td>
-          <td>A</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="3">Total credit hours</th>
-          <th>28</th>
-          <th></th>
-        </tr>
-      </tfoot>
-    </table>
+        <!-- Lab 12: Progress -->
+        <p>
+          <label for="degree">Degree progress:</label>
+          <progress id="degree" value="40" max="100">40%</progress> 40%
+        </p>
 
-    <hr />
-    <h2 id="contact">Contact</h2>
-    <p>Address:<br />Addis Ababa,<br />Ethiopia</p>
-    <p>
-      Email:
-      <a href="mailto:your.email@example.com"
-        >gammachu.fekadu@aastustudent.edu.et</a
-      >
-    </p>
-    <p>Phone: <a href="tel:+251 972 62 7807">+251 972 62 7807</a></p>
-    <p>GitHub: <a href="https://github.com/Gamulaa">github.com/Gamulaa</a></p>
-    <p>
-      LinkedIn:
-      <a href="linkedin.com/in/gemechu-fekadu-9590573ab"
-        >linkedin.com/in/gemechu-fekadu-9590573ab</a
-      >
-    </p>
-    <p><a href="files/CV.pdf" download>Download my CV (PDF)</a></p>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <caption>
+            Academic Record — BSc in Software Engineering
+          </caption>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Semester</th>
+              <th>Course</th>
+              <th>Credit Hours</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="4">Year 1</th>
+              <td rowspan="2">Semester I</td>
+              <td>Fundamentals of Programming</td>
+              <td>5</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Applied Mathematics I</td>
+              <td>4</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Semester II</td>
+              <td>Object Oriented Programming</td>
+              <td>5</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Discrete Mathematics</td>
+              <td>4</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Year 2</th>
+              <td rowspan="2">Semester I</td>
+              <td>Data Structures &amp; Algorithms</td>
+              <td>5</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>Internet Programming I</td>
+              <td>5</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Total credit hours</th>
+              <th>28</th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
-    <h3>Connect with me</h3>
-    <img
-      src="images/connect-banner.png"
-      usemap="#connectmap"
-      alt="Connect banner: GitHub, LinkedIn, Email"
-      width="600"
-      height="200"
-    />
-    <map name="connectmap">
-      <area
-        shape="rect"
-        coords="20,40,180,160"
-        href="https://github.com/Gamulaa"
-        alt="GitHub"
-      />
-      <area
-        shape="circle"
-        coords="300,100,70"
-        href="linkedin.com/in/gemechu-fekadu-9590573ab"
-        alt="LinkedIn"
-      />
-      <area
-        shape="rect"
-        coords="420,40,580,160"
-        href="mailto:gammachu.fekadu@aastustudent.edu.et"
-        alt="Email"
-      />
-    </map>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Address:<br />Addis Ababa,<br />Ethiopia</p>
+        <p>
+          Email:
+          <a href="mailto:gammachu.fekadu@aastustudent.edu.et"
+            >gammachu.fekadu@aastustudent.edu.et</a
+          >
+        </p>
+        <!-- Lab 13: Entities &nbsp; -->
+        <p>
+          Phone: <a href="tel:+251972627807">+251&nbsp;972&nbsp;62&nbsp;7807</a>
+        </p>
+        <p>
+          GitHub: <a href="https://github.com/Gamulaa">github.com/Gamulaa</a>
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://linkedin.com/in/gemechu-fekadu-9590573ab"
+            >linkedin.com/in/gemechu-fekadu-9590573ab</a
+          >
+        </p>
+        <p>
+          <a href="files/CV.pdf" download
+            >Download my <abbr title="Curriculum Vitae">CV</abbr> (PDF)</a
+          >
+        </p>
+
+        <h3>Connect with me</h3>
+        <img
+          src="images/connect-banner.png"
+          usemap="#connectmap"
+          alt="Connect banner: GitHub, LinkedIn, Email"
+          width="600"
+          height="200"
+        />
+        <map name="connectmap">
+          <area
+            shape="rect"
+            coords="20,40,180,160"
+            href="https://github.com/Gamulaa"
+            alt="GitHub"
+          />
+          <area
+            shape="circle"
+            coords="300,100,70"
+            href="https://linkedin.com/in/gemechu-fekadu-9590573ab"
+            alt="LinkedIn"
+          />
+          <area
+            shape="rect"
+            coords="420,40,580,160"
+            href="mailto:gammachu.fekadu@aastustudent.edu.et"
+            alt="Email"
+          />
+        </map>
+
+        <!-- Lab 11: Map -->
+        <h3>Where I study</h3>
+        <iframe
+          src="YOUR_GOOGLE_MAPS_EMBED_LINK_HERE"
+          width="600"
+          height="300"
+          title="Map of my university campus"
+        ></iframe>
+
+        <!-- Lab 9 & 10: Form -->
+        <h3>Send me a message</h3>
+        <form
+          action="thank-you.html"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <legend>Your Details</legend>
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname" required />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Project Details</legend>
+            <label for="phone">Phone (optional):</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              pattern="0[79][0-9]{8}"
+              title="10 digits starting with 09 or 07"
+            />
+            <br /><br />
+            <p>Preferred contact method:</p>
+            <input
+              type="radio"
+              id="by-email"
+              name="contact-method"
+              value="email"
+              checked
+            />
+            <label for="by-email">Email</label>
+            <input
+              type="radio"
+              id="by-phone"
+              name="contact-method"
+              value="phone"
+            />
+            <label for="by-phone">Phone</label>
+            <br /><br />
+            <label for="meeting">Preferred meeting date:</label>
+            <input type="date" id="meeting" name="meeting" min="2026-11-01" />
+            <br /><br />
+            <label for="weeks">Project length (weeks):</label>
+            <input
+              type="number"
+              id="weeks"
+              name="weeks"
+              min="1"
+              max="52"
+              step="1"
+            />
+            <br /><br />
+            <label for="brief">Attach a project brief:</label>
+            <input type="file" id="brief" name="brief" />
+            <br /><br />
+            <label for="colour">Preferred website colour:</label>
+            <input type="color" id="colour" name="colour" value="#1f5fa8" />
+            <br /><br />
+            <label for="rating"
+              >How much do you like my portfolio? (1–10)</label
+            >
+            <input
+              type="range"
+              id="rating"
+              name="rating"
+              min="1"
+              max="10"
+              value="7"
+            />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Your Message</legend>
+            <label for="reason">Reason for contacting me:</label>
+            <select id="reason" name="reason" required>
+              <optgroup label="Work">
+                <option value="internship">Internship offer</option>
+                <option value="freelance">Freelance project</option>
+                <option value="job">Full-time job</option>
+              </optgroup>
+              <optgroup label="Study">
+                <option value="group-project">Group project</option>
+                <option value="tutoring">Tutoring</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+            <br /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="40"
+              required
+            ></textarea>
+            <br />
+            <input type="checkbox" id="copy" name="copy" value="yes" />
+            <label for="copy">Send me a copy of this message</label>
+          </fieldset>
+
+          <br />
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Lab 8 & 13: Footer -->
+    <footer>
+      <p>&copy; 2026 Gemechu Fekadu. All rights reserved.</p>
+      <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+    </footer>
+
+    <!-- Lab 14: Canvas Script -->
+    <script>
+      const canvas = document.getElementById("logo");
+      const ctx = canvas.getContext("2d");
+
+      // Blue square background
+      ctx.fillStyle = "#1f5fa8";
+      ctx.fillRect(0, 0, 120, 120);
+
+      // White circle
+      ctx.beginPath();
+      ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+      ctx.fillStyle = "white";
+      ctx.fill();
+
+      // Initials in the middle
+      ctx.fillStyle = "#1f5fa8";
+      ctx.font = "bold 36px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("GF", 60, 62);
+    </script>
   </body>
 </html>

@@ -4,93 +4,150 @@
     <meta charset="UTF-8" />
     <title>Projects | Gemechu Fekadu</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Lab 8: Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects built by Gemechu Fekadu." />
+    <meta
+      name="keywords"
+      content="Gemechu Fekadu, projects, calculator, library system"
+    />
+    <meta name="author" content="Gemechu Fekadu" />
   </head>
   <body>
-    <p><a href="index.html">← Back to Home</a></p>
-    <h1>My Projects</h1>
-    <p>
-      Details of every project I have built. You can also
-      <a href="index.html#contact">contact me</a>.
-    </p>
+    <!-- Lab 8: Header -->
+    <header>
+      <h1>My Projects</h1>
+      <nav>
+        <a href="index.html">← Back to Home</a>
+      </nav>
+    </header>
 
-    <h2>Simple Calculator</h2>
-    <img
-      src="images/project-calculator.png"
-      alt="Screenshot of the calculator showing 12 + 30 = 42"
-      width="400"
-      height="250"
-    />
-    <p>A calculator that adds, subtracts, multiplies and divides.</p>
-    <h3>How I built it</h3>
-    <ol>
-      <li>Designed the layout</li>
-      <li>Wrote the HTML form</li>
-      <li>Added JavaScript logic</li>
-      <li>Tested all operations</li>
-    </ol>
-    <ul>
-      <li>HTML</li>
-      <li>JavaScript</li>
-    </ul>
+    <!-- Lab 8: Main -->
+    <main>
+      <p>
+        Details of every project I have built. You can also
+        <a href="index.html#contact">contact me</a>.
+      </p>
 
-    <h2>Library Management System</h2>
-    <img
-      src="images/project-library.png"
-      alt="Screenshot of the library system main menu"
-      width="400"
-      height="250"
-    />
-    <p>A console program for borrowing and returning books.</p>
-    <h3>How I built it</h3>
-    <ol>
-      <li>Designed the database</li>
-      <li>Wrote the borrow/return functions</li>
-      <li>Added search</li>
-      <li>Tested with sample data</li>
-    </ol>
-    <ul>
-      <li>C++</li>
-      <li>File I/O</li>
-    </ul>
+      <!-- Lab 8: Articles -->
+      <article id="simple-calculator">
+        <h2>Simple Calculator</h2>
+        <img
+          src="images/project-calculator.png"
+          alt="Screenshot of the calculator showing 12 + 30 = 42"
+          width="400"
+          height="250"
+        />
+        <p>A calculator that adds, subtracts, multiplies and divides.</p>
 
-    <h2>Project Summary</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
-      <caption>
-        Project Summary
-      </caption>
-      <thead>
-        <tr>
-          <th>Project</th>
-          <th>Language</th>
-          <th>Year</th>
-          <th>Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Simple Calculator</td>
-          <td>JavaScript</td>
-          <td>2025</td>
-          <td><a href="#simple-calculator">View</a></td>
-        </tr>
-        <tr>
-          <td>Library Management System</td>
-          <td>C++</td>
-          <td>2026</td>
-          <td><a href="#library-management-system">View</a></td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="3">Total projects</th>
-          <th>2</th>
-        </tr>
-      </tfoot>
-    </table>
+        <!-- Lab 11: Video -->
+        <h3>Watch the demo</h3>
+        <video
+          controls
+          poster="images/project-demo-poster.jpg"
+          width="640"
+          height="360"
+        >
+          <source src="media/project-demo.mp4" type="video/mp4" />
+          <source src="media/project-demo.webm" type="video/webm" />
+          <track
+            src="media/project-demo.vtt"
+            kind="captions"
+            srclang="en"
+            label="English"
+            default
+          />
+          Your browser does not support the video tag.
+        </video>
 
-    <p>
-      Learn more at the
-      <a href="https://www.w3.org/">official W3C HTML reference</a>.
-    </p>
+        <!-- Lab 12: Details -->
+        <details>
+          <summary>How I built it</summary>
+          <ol>
+            <li>Designed the layout</li>
+            <li>Wrote the HTML form</li>
+            <li>Added JavaScript logic</li>
+            <li>Tested all operations</li>
+          </ol>
+        </details>
+        <ul>
+          <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+          <li>JavaScript</li>
+        </ul>
+      </article>
+
+      <article id="library-management-system">
+        <h2>Library Management System</h2>
+        <img
+          src="images/project-library.png"
+          alt="Screenshot of the library system main menu"
+          width="400"
+          height="250"
+        />
+        <p>A console program for borrowing and returning books.</p>
+
+        <details>
+          <summary>How I built it</summary>
+          <ol>
+            <li>Designed the database</li>
+            <li>Wrote the borrow/return functions</li>
+            <li>Added search</li>
+            <li>Tested with sample data</li>
+          </ol>
+        </details>
+        <ul>
+          <li>C++</li>
+          <li>File I/O</li>
+        </ul>
+      </article>
+
+      <h2>Project Summary</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <caption>
+          Project Summary
+        </caption>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Language</th>
+            <th>Year</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Simple Calculator</td>
+            <td>JavaScript</td>
+            <!-- Lab 13: Time -->
+            <td><time datetime="2025">2025</time></td>
+            <td><a href="#simple-calculator">View</a></td>
+          </tr>
+          <tr>
+            <td>Library Management System</td>
+            <td>C++</td>
+            <!-- Lab 13: Time -->
+            <td><time datetime="2026">2026</time></td>
+            <td><a href="#library-management-system">View</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total projects</th>
+            <th>2</th>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>
+        Learn more at the
+        <a href="https://www.w3.org/">official W3C HTML reference</a>.
+      </p>
+    </main>
+
+    <!-- Lab 8: Footer -->
+    <footer>
+      <p>&copy; 2026 Gemechu Fekadu. All rights reserved.</p>
+    </footer>
   </body>
 </html>
