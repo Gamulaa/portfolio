@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gemechu Fekadu - Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Gemechu Fekadu, Software Engineering student and aspiring web developer."
+    />
+    <meta
+      name="keywords"
+      content="Gemmechu Fekadu, portfolio, software engineering, web developer, HTML"
+    />
+    <meta name="author" content="Gemechu Fekadu" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Lab 8 & 12 & 14: Header, Nav, Dialog, Canvas -->
+    <header>
+      <!-- Lab 14: Canvas Logo -->
+      <canvas id="logo" width="120" height="120">[Your Initials] logo</canvas>
+
+      <h1>Gemechu Fekadu</h1>
+      <img
+        src="images/Professional Portrait in Teal Frame.png"
+        alt="Portrait of Gemechu Fekadu smiling"
+        title="Gemechu Fekadu"
+        width="200"
+        height="200"
+      />
+      <p>Software Engineering student and aspiring web developer.</p>
+
+      <!-- Lab 12: Hire Me Dialog -->
+      <button
+        type="button"
+        onclick="document.getElementById('hireDialog').showModal()"
+      >
+        Hire me
+      </button>
+      <dialog id="hireDialog">
+        <h2>Available for internships</h2>
+        <p>
+          I am available for internships and freelance web projects from June
+          2027.
+        </p>
+        <p>
+          <a href="#contact">Send me a message</a> or
+          <a href="files/cv.pdf" download>download my CV</a>.
+        </p>
+        <button
+          type="button"
+          onclick="document.getElementById('hireDialog').close()"
+        >
+          Close
+        </button>
+      </dialog>
+
+      <nav>
+        <a href="#about">About</a> | <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> | <a href="#education">Education</a> |
+        <a href="#contact">Contact</a> |
+        <a href="projects.html">All Projects</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          My favourite tag is &lt;main&gt;, because it tells the browser where
+          the important content is &amp; helps screen readers.
+        </p>
+        <p>
+          I study at
+          <abbr title="Addis Ababa Science and Technology University"
+            >AASTU</abbr
+          >.
+        </p>
+
+        <!-- Lab 11: Audio -->
+        <h3>Hear my introduction</h3>
+        <audio controls>
+          <source src="media/intro.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <!-- Lab 8: Aside -->
+      <aside>
+        <h2>What Inspires Me</h2>
+        <!-- Lab 11: Iframe YouTube -->
+        <h3>A talk I recommend</h3>
+        <iframe
+          src="./media/project-demo.mp4"
+          width="560"
+          height="315"
+          title="YouTube video: Inspiring Tech Talk"
+          allowfullscreen
+        >
+        </iframe>
+      </aside>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <!-- Lab 12: Meters -->
+        <h3>Skill Levels</h3>
+        <p>
+          <label for="lvl-html">HTML</label>
+          <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+        </p>
+        <p>
+          <label for="lvl-python">Python</label>
+          <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+        </p>
+        <p>
+          <label for="lvl-js">JavaScript</label>
+          <meter
+            id="lvl-js"
+            value="0.2"
+            min="0"
+            max="1"
+            low="0.3"
+            high="0.7"
+            optimum="1"
+          >
+            20%
+          </meter>
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>Simple Calculator</h3>
+          <p>A basic calculator built with Python.</p>
+        </article>
+        <p><a href="projects.html">See all my projects →</a></p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+
+        <p>
+          Addis Ababa Science and Technology University,
+          <time datetime="2023-09">September 2023</time> – present
+        </p>
+
+        <h3>Second Year – First Semester</h3>
+        <table border="1">
+          <caption>
+            Academic Results – First Semester
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Course Name</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Fundamentals of Programming I</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>History</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Introduction to Software Engineering</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Discrete Mathematics</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Global Trend</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Probability</td>
+              <td>A-</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Second Year – Second Semester</h3>
+        <table border="1">
+          <caption>
+            Academic Results – Second Semester
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Course Name</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Database Systems</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Data Communication</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Digital Logic Design (DLD)</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Fundamentals of Programming II</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Economics</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Lab 12: Progress -->
+        <p>
+          <label for="degree">Degree progress:</label>
+          <progress id="degree" value="40" max="100">40%</progress> 40%
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Phone: <a href="tel:+251972627807">+251&nbsp;972&nbsp;627&nbsp;807</a>
+        </p>
+
+        <!-- Lab 11: Map -->
+        <h3>Where I study</h3>
+        <iframe
+          src="YOUR_GOOGLE_MAPS_EMBED_LINK_HERE"
+          width="600"
+          height="300"
+          title="Map of my university campus"
+        >
+        </iframe>
+
+        <!-- Lab 9 & 10: Form -->
+        <h3>Send me a message</h3>
+        <form
+          action="thank-you.html"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <legend>Your Details</legend>
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname" required />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Project Details</legend>
+            <label for="phone">Phone (optional):</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              pattern="0[79][0-9]{8}"
+              title="10 digits starting with 09 or 07"
+            />
+            <br /><br />
+            <p>Preferred contact method:</p>
+            <input
+              type="radio"
+              id="by-email"
+              name="contact-method"
+              value="email"
+              checked
+            />
+            <label for="by-email">Email</label>
+            <input
+              type="radio"
+              id="by-phone"
+              name="contact-method"
+              value="phone"
+            />
+            <label for="by-phone">Phone</label>
+            <br /><br />
+            <label for="meeting">Preferred meeting date:</label>
+            <input type="date" id="meeting" name="meeting" min="2026-11-01" />
+            <br /><br />
+            <label for="weeks">Project length (weeks):</label>
+            <input
+              type="number"
+              id="weeks"
+              name="weeks"
+              min="1"
+              max="52"
+              step="1"
+            />
+            <br /><br />
+            <label for="brief">Attach a project brief:</label>
+            <input type="file" id="brief" name="brief" />
+            <br /><br />
+            <label for="colour">Preferred website colour:</label>
+            <input type="color" id="colour" name="colour" value="#1f5fa8" />
+            <br /><br />
+            <label for="rating"
+              >How much do you like my portfolio? (1–10)</label
+            >
+            <input
+              type="range"
+              id="rating"
+              name="rating"
+              min="1"
+              max="10"
+              value="7"
+            />
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Your Message</legend>
+            <label for="reason">Reason for contacting me:</label>
+            <select id="reason" name="reason" required>
+              <optgroup label="Work">
+                <option value="internship">Internship offer</option>
+                <option value="freelance">Freelance project</option>
+                <option value="job">Full-time job</option>
+              </optgroup>
+              <optgroup label="Study">
+                <option value="group-project">Group project</option>
+                <option value="tutoring">Tutoring</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+            <br /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              cols="40"
+              required
+            ></textarea>
+            <br />
+            <input type="checkbox" id="copy" name="copy" value="yes" />
+            <label for="copy">Send me a copy of this message</label>
+          </fieldset>
+
+          <br />
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Lab 8 & 13: Footer -->
+    <footer>
+      <p>&copy; 2026 Gemechu Fekadu. All rights reserved.</p>
+      <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+    </footer>
+
+    <!-- Lab 14: Canvas Script -->
+    <script>
+      const canvas = document.getElementById("logo");
+      const ctx = canvas.getContext("2d");
+
+      // 1. Blue square background
+      ctx.fillStyle = "#1f5fa8";
+      ctx.fillRect(0, 0, 120, 120);
+
+      // 2. White circle
+      ctx.beginPath();
+      ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+      ctx.fillStyle = "white";
+      ctx.fill();
+
+      // 3. Initials in the middle
+      ctx.fillStyle = "#1f5fa8";
+      ctx.font = "bold 36px Arial";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("[YOUR INITIALS]", 60, 62);
+    </script>
+  </body>
+</html>
