@@ -104,3 +104,62 @@ body {
     white-space: nowrap;
   }
 }
+/* Horizontal GF Brand Banner */
+.brand-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+
+  background: #f4f8ff;
+  border-radius: 12px;
+}
+
+/* Logo */
+.brand-banner img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Brand Information */
+.brand-info {
+  text-align: left;
+}
+
+.brand-info h2 {
+  color: #1f5fa8;
+  font-size: 25px;
+  margin: 0 0 8px;
+}
+
+.brand-info p {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .brand-banner {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .brand-banner img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .brand-info h2 {
+    font-size: 18px;
+  }
+
+  .brand-info p {
+    font-size: 12px;
+  }
+}
